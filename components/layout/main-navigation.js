@@ -1,9 +1,10 @@
 import Logo from "./logo";
 import Link from "next/link";
+import classes from "./main-navigation.module.css";
 
 const MainNavigation = (props) => {
   return (
-    <header>
+    <header className={classes.header}>
       <Link href="/">
         <a>
           <Logo />
@@ -16,9 +17,6 @@ const MainNavigation = (props) => {
           </li>
           <li>
             <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/posts">Posts</Link>
           </li>
         </ul>
       </nav>
