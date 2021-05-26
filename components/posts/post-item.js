@@ -9,6 +9,7 @@ const PostItem = (props) => {
     day: "numeric",
     month: "long",
     year: "numeric",
+    timeZone: "UTC",
   });
 
   const imagePath = `/images/posts/${slug}/${image}`;
